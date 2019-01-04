@@ -25,6 +25,6 @@ num_runs = sum([results[key][1] for key in results])
 for key in results:
     try:
         print(results[key][0], "Energy: ", key[1],
-                f"Occurrences: {results[key][1]/num_runs*100:.2f}%")
+              f"Occurrences: {results[key][1]/num_runs*100:.2f}%")
     except KeyError:
         pass
